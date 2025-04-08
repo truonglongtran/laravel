@@ -1,0 +1,116 @@
+
+.error-messenger ul{
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* text-decoration: none; */
+    list-style: none;
+    color: red;
+    padding: 0;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+h5{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+table .image{
+    height: 50px;
+    display: block;
+}
+
+.image-cover img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+table strong{
+    min-width: 88px;
+    display: inline-block;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td{
+    vertical-align: middle  ;
+}
+
+.uk-flex-space-between{
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.uk-flex-middle{
+    -ms-flex-pack: center;
+    -webkit-align-item: center;
+    align-items: center;
+}
+
+.uk-flex{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.filter-wrapper{
+    margin-bottom: 20px;
+}
+
+.filter-wrapper .perpage{
+    display: inline-block;
+}
+
+.btn{
+    margin-bottom: opx !important;
+    font-size: 13px;
+    border-radius: 0;
+    height: 32px;
+}
+
+.filter-wrapper .form-control{
+    height: 32px;
+    max-width: 200px;
+    font-size: 13px;
+}
+
+.mr10{
+    margin-right: 10px;
+}
+.mb15{
+    margin-bottom: 15px;
+}
+
+.mr5{
+    margin-right: 5px;
+}
+
+.box .ibox{
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+control-label{
+   display: block;
+}
+
+.panel-title{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+.panel-description{
+    font-size: 15px;
+}
+
+/* Cấu hình cho Select2 */
+

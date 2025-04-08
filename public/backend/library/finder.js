@@ -1,0 +1,29 @@
+(function($){
+    "use strict";
+    var HT={};
+    var document =  $(document)
+    HT.inputImage= () =>{
+        $(document).on('click', '.input-image', function(){
+            let _this = $(this);
+            let fileUpload = _this.attr('data-upload');
+            HT.BrowseServerInput($(this),fileUpload);
+
+        })
+    }
+    HT.BrowseServerInput = (object,type)=>{
+        if(typeof(type)=='undefined'){
+            type = 'Images';
+        }
+        var finder = new CKFinder();
+        finder.resourceType = type;
+        finder.selectedActionFunction = function(fileUrl,data){
+            console.log(fileUrl);
+            fileUrl = fileUrl.replace(BASE_URL,'/');
+            object.val(fileUrl);
+        }
+        finder.popup();
+    }
+    document.ready(function(){
+        HT.BrowseServerInput();
+    })
+})(jQuery);
